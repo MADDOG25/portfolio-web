@@ -1,0 +1,723 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+/* ---------- COLOR PALETTES ---------- */
+:root {
+  --purple: #9555a8;
+  --darkpurple: #1d1a31;
+  --whiteseasalt: #f4f7f5;
+  --vibeorange: #ffad05;
+  --vibeblue: #5995ed;
+}
+
+/* ---------- GENERAL ---------- */
+html{
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--whiteseasalt);
+}
+
+/* ---------- NAVBAR ---------- */
+#navbar {
+  position: sticky;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  top: 0;
+  font-family: "Roboto Slab", sans-serif;
+  background: var(--darkpurple);
+}
+.container a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--vibeorange);
+  text-decoration: none;
+}
+.container-text-bar {
+  display: flex;
+  align-items: center;
+}
+.container-text-bar a {
+  position: relative;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--vibeorange);
+  text-decoration: none;
+}
+.container-text-bar a:hover {
+  color: var(--vibeblue);
+  transition: all 0.6s ease;
+}
+.container-text-bar a img {
+  position: relative;
+}
+
+/* ---------- SECTION PRESENTATION ---------- */
+.section-presentation {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom: 6em;
+}
+.container-presentation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.presentation-text {
+  margin: 20px;
+}
+.presentation-text h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 46px;
+  font-weight: 600;
+}
+.presentation-text h1 span {
+  color: var(--vibeorange);
+}
+.presentation-text h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(80, 80, 80);
+}
+.presentation-text p {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: rgb(80, 80, 80);
+}
+.presentation-text a button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px 3px var(--purple);
+  color: var(--whiteseasalt);
+  background-color: var(--vibeorange);
+  cursor: pointer;
+}
+.presentation-text a button:hover {
+  box-shadow: 1px 3px 8px 3px var(--purple);
+  background-color: var(--darkpurple);
+  transition: all 0.6s ease;
+}
+.presentation-img img {
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  border: 6px solid var(--darkpurple);
+  object-fit: cover;
+}
+
+/* ---------- CONTAINER ABOUT ---------- */
+.container-about {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  margin-bottom: 6em;
+}
+.container-about article h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(80, 80, 80);
+}
+.flex-item-profile-card {
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  background-color: var(--darkpurple);
+  transition: all 0.3s ease;
+}
+.flex-item-profile-card img {
+  padding: 1em;
+}
+.flex-item-profile-card .text-about h3 {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--whiteseasalt);
+}
+.flex-item-profile-card .text-about p {
+  width: 100%;
+  padding: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--whiteseasalt);
+}
+.icon-about {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.icon-about a {
+  margin: 10px;
+  font-size: 40px;
+  color: var(--vibeblue);
+  text-decoration: none;
+}
+
+/* ---------- SECTION SKILL BAR ---------- */
+.section-skill-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6em;
+  font-family: "Roboto Slab", serif;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--whiteseasalt);
+}
+.skills-bar {
+  width: 650px;
+  margin: 10px auto;
+  margin-bottom: 4em;
+  padding: 20px 30px;
+  color: var(--whiteseasalt);
+  border-radius: 10px;
+  background: var(--darkpurple);
+}
+.skills-bar .bar {
+  margin: 20px 0;
+}
+.skills-bar .bar:first-child {
+  margin-top: 0px;
+}
+.skills-bar .bar .info {
+  margin-bottom: 10px;
+}
+.skills-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 18px;
+  background: var(--vibeblue);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+.skills-bar .bar .progress-line:hover {
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar .progress-line span {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  background: var(--vibeorange);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-line.html span {
+  width: 85%;
+}
+.progress-line.css span {
+  width: 75%;
+}
+.progress-line.javascript span {
+  width: 50%;
+}
+.progress-line.react span {
+  width: 20%;
+}
+.progress-line.boostrap span {
+  width: 30%;
+}
+.progress-line.tailwind span {
+  width: 20%;
+}
+.progress-line.git span {
+  width: 60%;
+}
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  right: 0;
+  top: -10px;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar .progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  right: 0;
+  top: -24px;
+  border-radius: 3px;
+  background: #000;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "85%";
+}
+.progress-line.css span::after {
+  content: "75%";
+}
+.progress-line.javascript span::after {
+  content: "50%";
+}
+.progress-line.react span::after {
+  content: "20%";
+}
+.progress-line.boostrap span::after {
+  content: "30%";
+}
+.progress-line.tailwind span::after {
+  content: "20%";
+}
+.progress-line.git span::after {
+  content: "60%";
+}
+.icon-skill-bar {
+  display: none;
+}
+
+/* ---------- SECTION PROJECTS ---------- */
+.container-project {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 20px;
+  margin-bottom: 6em;
+}
+.container-project h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  margin-bottom: 2em;
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(80, 80, 80);
+}
+.container-project h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(80, 80, 80);
+}
+.container-project-group img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 500px;
+  margin-bottom: 2em;
+  border-radius: 40px;
+  border: 6px solid var(--darkpurple);
+  object-fit: contain; /*The image keeps its aspect ratio, but is resized to fit within the given dimension*/
+}
+.container-project-group a {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 14px;
+  margin-bottom: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--vibeorange);
+  text-decoration: none;
+}
+.cont-link_icon {
+  display: flex;
+  justify-content: center;
+}
+.cont-link_icon a i {
+  font-size: 38px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.cont-link_icon a i:hover {
+  color: var(--vibeblue);
+}
+.cont-link_view {
+  display: flex;
+  justify-content: center;
+}
+.cont-link_view a {
+  margin-bottom: 4em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+.cont-link_view a:hover {
+  color: var(--darkpurple);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  background-color: var(--darkpurple);
+  color: var(--whiteseasalt);
+}
+.footer-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+.footer-container .footer-links a i {
+  color: var(--whiteseasalt);
+  font-size: 28px;
+  margin: 1em;
+  margin-bottom: 1em;
+  transition: all 0.6s ease;
+}
+.footer-container .footer-links a i:hover {
+  color: var(--vibeorange);
+}
+.text-brand {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Roboto", sans-serif;
+  margin: 14px;
+  margin-bottom: 2em;
+}
+.text-brand a {
+  color: var(--whiteseasalt);
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.6s ease;
+}
+.text-brand a:hover {
+  color: var(--vibeorange);
+}
+.text-brand .space {
+  margin: 0 0.5em 0 0.5em;
+}
+.footer-container p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-container a img {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60px;
+  height: 50px;
+}
+.cont-img_footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* ---------- SECTION NAVBAR ---------- */
+  #navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container {
+    margin-bottom: 1em;
+  }
+  .container-text-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-text-bar a {
+    margin: 0.2em;
+    padding: 0;
+  }
+
+  /* ---------- SECTION PRESENTATION ---------- */
+  .container-presentation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 0.5em;
+    margin-top: 2em;
+  }
+  .section-presentation {
+    margin: 0;
+  }
+  .presentation-text {
+    margin: 0;
+    order: 1;
+  }
+  .presentation-text h1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  .presentation-text h1 span {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
+  .presentation-text h2 {
+    font-size: 32px;
+  }
+  .presentation-text p {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .presentation-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .presentation-img{
+    order: 0;
+  }
+  .presentation-img img {
+    margin: 0;
+    width: 170px; height: 170px;
+  }
+  .text-about p {
+    padding: 1em 0.5em 0 0.5em;
+    font-size: 14px;
+  }
+  .icon-about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .icon-about a {
+    margin: 0;
+    font-size: 30;
+  }
+
+  /* ---------- SECTION ABOUT ME ---------- */
+  .flex-item {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100vw;
+    margin-top: 2em;
+  }
+  .flex-item-profile-card {
+    width: 100%;
+    height: 430px;
+  }
+  .flex-item-profile-card img {
+    display: none;
+  }
+  .flex-item-profile-card .text-about p {
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ---------- SECTION SKILL BAR ---------- */
+  .skills-bar {
+    max-width: 280px;
+    margin: 0;
+    margin-top: 2em;
+  }
+  .skills-bar h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .skill-bar-text2 {
+    display: none;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 0;
+    display: none;
+  }
+  .bar .info {
+    display: flex;
+    justify-content: center;
+  }
+  .skills-bar .bar .progress-line {
+    display: none;
+  }
+  .icon-skill-bar {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .icon-skill-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+
+  /* ---------- SECTION PROJECT ---------- */
+  .container-project {
+    width: 100%;
+    margin: 0 0 6em 0;
+  }
+  .container-project-group {
+    width: 100vw;
+  }
+  .container-project-group h3 {
+    text-align: center;
+    font-size: 22px;
+  }
+  .container-project-group img {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* ---------- SECTION FOOTER ---------- */
+  .footer-container {
+    width: 100vw;
+  }
+  .footer-links {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .text-brand {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .text-brand p {
+    display: none;
+  }
+  .footer-container p {
+    text-align: center;
+  }
+}
+
+/* ---------- TABLET ---------- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* ---------- SECTION PRESENTATION ---------- */
+  .container-presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+  }
+  .presentation-text h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .presentation-text h1 span {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
+  .presentation-text h2 {
+    font-size: 32px;
+  }
+
+  /* ---------- SECTION ABOUT ---------- */
+  .container-about {
+    margin: 0 0 6em 0;
+  }
+  .flex-item-profile-card {
+    width: 700px;
+    margin: 0 0 6em 0;
+  }
+  .flex-item-profile-card img {
+    width: 350px;
+  }
+  .text-about {
+    width: 350px;
+  }
+
+  .icon-skill-bar {
+    display: none;
+  }
+
+  /* ---------- SECTION PROJECT ---------- */
+  .container-project {
+    width: 100%;
+    margin: 0 0 6em 0;
+  }
+  .container-project-group {
+    width: 100vw;
+  }
+  .container-project-group img {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
