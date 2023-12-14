@@ -1,22 +1,21 @@
-# [Left the Matrix](https://left-the-matrix.netlify.app/) | [<img src="/assets/instagram.svg" width="20" heigth="20">](https://www.instagram.com/devjeffrey/) | [<img src="/assets/linkedin.svg" width="20" heigth="20">](https://www.linkedin.com/in/dev-jeffrey/) | [<img src="/assets/github.svg" width="20" heigth="20">](https://github.com/MADDOG25)
+# [Portfolio web DevJeffrey](https://portfolio-devjeffrey.netlify.app/) | [<img src="/Assets/instagram.svg" width="20" heigth="20">](https://www.instagram.com/devjeffrey/) | [<img src="/Assets/youtube.svg" width="20" heigth="20">](www.youtube.com/@JeffreyMorgan-devxpersonal/) | [<img src="/Assets/linkedin.svg" width="20" heigth="20">](https://www.linkedin.com/in/dev-jeffrey/) | [<img src="/Assets/github.svg" width="20" heigth="20">](https://github.com/MADDOG25)
 
-## Este proyecto se ha realizado con el objetivo de brindar contenido de herramientas de gran valor para el desarrollo personal.
+## Este portafolio ha sido creado para compartir mi experiencia y habilidades con distintas tecnologías y herramientas del frontend.
 
 ### Vista previa
-[![Home Page](https://i.postimg.cc/Njw45PBY/Captura-de-pantalla-2023-12-01-23-16-32.png)](https://left-the-matrix.netlify.app/)
+[![Home Page](https://i.postimg.cc/qBj4Y0gP/Captura-de-pantalla-2023-12-14-17-25-28.png)](https://portfolio-devjeffrey.netlify.app/)
 
 **No requiere instalación**
 
 ### **Indice**
 
 1. Presentación
-2. Sobre nosotros
-3. Pasos para lograr el éxito
-4. Recursos
-5. Contacto
+2. Skills o Tenologías
+3. Proyectos
+4. Contacto
 
 ### **Tecnologías**
 
--HTML
--CSS
--JavaScript
+- HTML
+- CSS
+- JavaScript
